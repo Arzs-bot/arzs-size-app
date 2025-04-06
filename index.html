@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>ARZS 尺寸推薦系統</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>ARZS 尺寸推薦工具</h2>
+
+  <label for="styleSelect">選擇版型：</label>
+  <select id="styleSelect"></select>
+
+  <div class="form-group">
+    <label for="height">你的身高（cm）</label>
+    <input type="number" id="height" placeholder="例如：170">
+  </div>
+  <div class="form-group">
+    <label for="chest">你的胸圍（cm）</label>
+    <input type="number" id="chest" placeholder="例如：92">
+  </div>
+  <button onclick="recommendSize()">推薦尺寸</button>
+
+  <div id="result" class="result"></div>
+
+  <table class="size-table">
+    <thead>
+      <tr><th>尺寸</th><th>衣長</th><th>胸寬</th><th>肩寬</th><th>袖長</th></tr>
+    </thead>
+    <tbody id="sizeTableBody"></tbody>
+  </table>
+
+  <script src="size-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
 
