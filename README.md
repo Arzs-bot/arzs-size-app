@@ -1,1 +1,0 @@
-# arzs-size-app
